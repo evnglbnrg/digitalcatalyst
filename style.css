@@ -20,10 +20,12 @@ html{
 }
 .nav_item{
     font-size: 18px;
+    
 }
 .container{
     display: flex;
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 .hero{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,12 +33,22 @@ html{
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
+    
 }
+.hero img{
+    height: auto;
+    width: 100%;
+}
+
 .hero h1{
     color: rgb(223, 23, 23);
 }
 .hero p{
     font-family: cursive;
+}
+button{
+    height: auto;
+    width: 100%;
 }
 .btn1{
     height: 65px;
@@ -102,7 +114,8 @@ html{
 .cards{
  display: flex;
  justify-content: space-between;
- column-gap: 15px;
+ flex-wrap: wrap;
+ padding: 15px;
 
 }
 .cardbody{
@@ -119,8 +132,7 @@ html{
 }
 .cardbody img{
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
 .carddetail1{
     height: 300px;
@@ -182,8 +194,8 @@ html{
 }
 
 .ppic{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: auto;
         
 }
 
@@ -210,7 +222,8 @@ html{
     align-items: center;
     background-image: url(back.jpg);
     height: auto;
-    background-size: contain;
+    width: 100%;
+    background-size: cover;
     
 }
 .content{
@@ -234,6 +247,7 @@ html{
 }
  .container1{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,11 +311,13 @@ html{
 .contactForm .inputBox{
     position: relative;
     width: 100%;
+    height: auto;
     margin-top: 10px;
 }
 .contactForm .inputBox input, 
 .contactForm .inputBox textarea{
     width: 100%;
+    height: auto;
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
@@ -309,7 +325,8 @@ html{
     border-bottom: 2px solid #333;
     outline: none;
 } .contactForm .inputBox span{
-    position: absolute;
+    position: relative;
+    height: auto;
     left: 0;
     padding: 5px 0;
     font-size: 16px;
@@ -317,6 +334,10 @@ html{
     pointer-events: none;
     transition: 0.5s;
     color: #666;
+}
+#send{
+    height: auto;
+    width: 100%;
 }
 .contactForm .inputBox input:focus ~span,
 .contactForm .inputBox input:valid ~span,
@@ -329,6 +350,7 @@ html{
 .contactForm .inputBox input[type="submit"]
 {
     width: 100px;
+    height: auto;
     background: #00bcd4;
     color: #fff;
     border: none;
@@ -336,9 +358,10 @@ html{
     padding: 10px;
     font-size: 18px;
 }
-button{
+.inputBox button{
     
     width: 100px;
+    height: auto;
     background: #00bcd4;
     color: #fff;
     border: none;
