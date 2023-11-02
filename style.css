@@ -232,6 +232,7 @@ button{
 }
 .content{
     max-width: 100%;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -268,8 +269,17 @@ button{
     position: relative;
     padding: 20px 0;
     display: flex;
+    height: auto;
+    width: 100%;
 }
-
+.box{
+    width: 100%;
+    height: auto;
+}
+.box p{
+    width: 100%;
+    height: auto;
+}
 .container1 .contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
